@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>Ruta 26 Agosto 2026 · Valledupar · Comuna 1 → 6</title>
+    <title>Ruta 27 Agosto 2026 · Valledupar · Comuna 1 → 6</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
     <style>
         *{box-sizing:border-box;margin:0;padding:0;}
@@ -60,6 +60,7 @@
         .jornada-tarde{background:#FFE0B2;color:#E65100;}
         .verif-badge{background:#FFF3CD;color:#8a6100;border:1px solid #ffe082;}
         .alert-badge{background:#FDE0E0;color:#9c1c1c;border:1px solid #f5a8a8;}
+        .corp-badge{background:#EDE7F6;color:#4527A0;border:1px solid #d1c4e9;}
         .orden-badge{background:#0D2137;color:#fff;padding:1px 10px;border-radius:30px;font-size:.6rem;font-weight:700;display:inline-block;margin-top:2px;}
         .nodo-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:4px 0;font-size:.7rem;color:#2c6e9e;}
         .addr-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:4px 0;}
@@ -70,6 +71,7 @@
         .tag{font-size:.6rem;font-weight:600;padding:2px 9px;border-radius:24px;background:#eee;color:#444;}
         .tag-vol{background:#e0f0fa;color:#006d8f;}
         .tag-cart{background:#fde8e8;color:#b71c1c;}
+        .tag-corp{background:#ede7f6;color:#4527a0;}
         .inv-section{margin-top:8px;border-top:.5px solid #eee;padding-top:6px;}
         .inv-header{display:flex;align-items:center;gap:6px;cursor:pointer;}
         .inv-badge{background:#0D2137;color:#fff;border-radius:20px;padding:2px 9px;font-size:.6rem;}
@@ -92,18 +94,22 @@
 <body>
 <div class="container">
     <div class="header">
-        <h1>📅 Ruta 26 Agosto 2026 · Logytech Mobile · CLARO · Valledupar</h1>
+        <h1>📅 Ruta 27 Agosto 2026 · Logytech Mobile · CLARO · Valledupar</h1>
         <p>Valledupar, Cesar · Técnico: Martín Robles · Cel: 3043877555</p>
         <p>✅ Los equipos <strong>SMART CARD BCTI, CNX y NGR</strong> NO se cuentan en el total a recolectar</p>
-        <p>📋 <span id="totalOrders">30</span> órdenes · Mañana: 8 · Tarde: 22</p>
+        <p>📋 <span id="totalOrders">31</span> órdenes (30 residenciales + 1 corporativa) · Mañana: 15 · Tarde: 16</p>
         <p>📍 Direcciones precisas para Waze · Mensaje WhatsApp muestra <strong>Cta: [número de cuenta]</strong></p>
-        <p style="margin-top:6px;color:#aac;font-size:.7rem;">⬇️ Comunas en orden oficial: <strong>1 → 6</strong> (según <em>Comunas de Valledupar</em>, Wikipedia) · Dentro de cada comuna, orden sugerido por cercanía.</p>
+        <p style="margin-top:6px;color:#aac;font-size:.7rem;">⬇️ Comunas en orden oficial: <strong>1 → 6</strong> · Dentro de cada comuna, orden sugerido por cercanía. La orden corporativa (OHI) trae marca 🏢.</p>
     </div>
 
     <div class="assumption-note">
-        ✅ <strong>Correcciones confirmadas en terreno por el técnico:</strong> Ana Romero Churio (Divino Niño BF-06, orden 2463251) → Comuna 2; Víctor Pedroza (Leandro Diaz 2 01, orden 2468229) → Comuna 3; Miguel Ángel Pérez Herrón (Leandro Dias 3-09, orden 2468231) → Comuna 3; Luis Tibaque (Leandro Dias 3-08, orden 2468226) → Comuna 3; Jennifer Lizarazo (La Castellana 1, orden 2384156) → Comuna 5; Wendy Lora Velásquez Arias (Simón Bolívar, orden 2468208) → Comuna 3.<br><br>
-        ⚠️ <strong>Aún queda este caso por confirmar (marcado con 🔎 en la tarjeta):</strong><br>
-        • <strong>2468215 (Mayra Jose Diaz Sanchez, nodo "La Castellana", sin el "1")</strong> · es un sector distinto al de Jennifer Lizarazo (que sí se confirmó en Comuna 5); lo dejé en Comuna 3 por ahora, pero conviene verificarlo también ya que comparte nombre de barrio.
+        ✅ <strong>Correcciones confirmadas en terreno por el técnico:</strong> Sergio Bohorquez (La Garita, orden 2468511) → Comuna 1; Milena Garcia (San Antonio, orden 2468515) → Comuna 2; Liliana Cantillo (Rosa Mery, orden 2466034) → Comuna 2; Ronal Pacheco (Parque Las Américas, orden 2466558) → Comuna 2; Fredis Ospino (Fernando BF-B5, orden 2468517) → Comuna 3; Ediel Mojica (Flores de María 1, orden 2468506) → Comuna 4; Nellyt de Mejia (Flores de María 2, orden 2466255) → Comuna 4.<br><br>
+        ⚠️ <strong>Aún quedan estos casos por confirmar (marcados con 🔎 en la tarjeta):</strong><br>
+        • <strong>2466871 (Breyner Guerra, "Villa Magdala")</strong> → Comuna 4.<br>
+        • <strong>2466053 (Roberto Castañez, "Los Caciques")</strong> → Comuna 4, por similitud con "Portal Cacique".<br>
+        • <strong>2467211 (Alvaro Amaris, "Novalito")</strong> → Comuna 1.<br>
+        • <strong>2466074 (Jorge Machado, "Colinas del Gaitán", *1 módem 2 decos*)</strong> → Comuna 5, por cercanía con el sector Gaitán.<br>
+        • <strong>2468558 (OHI Organización Humana Integral, orden corporativa, Carrera 19 #14-47)</strong> → Comuna 1, verificar con el cliente.
     </div>
 
     <div class="month-nav" id="monthNav"></div>
@@ -116,77 +122,81 @@
 </div>
 
 <script>
-// ======================= ÓRDENES DEL 26 DE AGOSTO 2026 =======================
-const ORDENES_26 = [
+// ======================= ÓRDENES DEL 27 DE AGOSTO 2026 =======================
+const ORDENES_27 = [
     // ===== Comuna 1 - Centro =====
-    { id:"2468214", acct:"15347247", name:"LUCY INDI SARMIENTO SERENO", nodo:"VOB", nombreNodo:"OBRERO", jornada:"Tarde", cel:"3218665629", tipo:"Cartera", dirClean:"CL 13C 10-34 CASA - OBRERO", wazeAddr:"CL 13C 10-34 Casa, Obrero, Valledupar, Cesar, Colombia", comuna:"Comuna 1 - Centro",
-      equip:[{t:"CAR",f:"SMART CARD BCTI",s:"02833121"},{t:"DBV",f:"DVB HD",s:"603112002224004"},{t:"MTA",f:"DUAL BAND",s:"98F781F454C7"}] },
+    { id:"2468513", acct:"21077769", name:"DIDIER VEN RONDON RONDON", nodo:"RME4F", nombreNodo:"EL CARMEN 4F", jornada:"Tarde", cel:"3146763685", tipo:"Cartera", dirClean:"CR 4 17B-102 PISO1 - EL CARMEN", wazeAddr:"CR 4 17B-102 Piso 1, El Carmen, Valledupar, Cesar, Colombia", comuna:"Comuna 1 - Centro",
+      equip:[{t:"CAR",f:"SMART CARD BCTI",s:"06213768"},{t:"CAR",f:"SMART CARD BCTI",s:"06658759"},{t:"ITV",f:"CARDLES",s:"230690228204"},{t:"CAR",f:"SMART CARD NGR",s:"23069022820V"},{t:"DBV",f:"DVB HD",s:"603112002252733"},{t:"DBV",f:"DVB HD",s:"603132002282466"},{t:"MTA",f:"DUAL BAND",s:"FC777B789400"}] },
+    { id:"2467211", acct:"21836879", name:"ALVARO JOS AMARIS DAZA", nodo:"VTO", nombreNodo:"NOVALITO", jornada:"Mañana", cel:"3218517444", tipo:"Voluntarios", dirClean:"CR 7 10-44 APTO304 - NOVALITO", wazeAddr:"Carrera 7 #10-44 Apto 304, Novalito, Valledupar, Cesar, Colombia", comuna:"Comuna 1 - Centro", verif:true,
+      equip:[{t:"MTA",f:"DUAL BAND",s:"1848594A117E"},{t:"CPE",f:"MESH",s:"M2005067706"},{t:"CPE",f:"MESH",s:"M2005067717"},{t:"CPE",f:"MESH",s:"M2005067718"}] },
+    { id:"2468558", acct:"OT 23214041", name:"OHI ORGANIZACIÓN HUMANA INTEGRAL S.A. - Juan Ospina", nodo:"HBA0004", nombreNodo:"SERVICIO CORPORATIVO", jornada:"Tarde", cel:"3014915637", tipo:"Corporativo", dirClean:"CR 19 14-47 - EMPRESA OHI (SERVICIO CORPORATIVO)", wazeAddr:"Carrera 19 #14-47, Valledupar, Cesar, Colombia", comuna:"Comuna 1 - Centro", verif:true,
+      equip:[{t:"RTR",f:"ROUTER HUAWEI AR617",s:"21500104982SM7501127"},{t:"CPE",f:"ONT ZTE F680",s:"2877777070B0"},{t:"CPE",f:"ONT ZTE F660",s:"ZTEGCF5C6CF2"}] },
+    { id:"2468511", acct:"20963186", name:"SERGIO LUI BOHORQUEZ JIMENEZ", nodo:"VGT", nombreNodo:"LA GARITA", jornada:"Tarde", cel:"3246845758", tipo:"Cartera", dirClean:"CL 16A 4-93 CASA - LA GARITA", wazeAddr:"CL 16A 4-93 Casa, La Garita, Valledupar, Cesar, Colombia", comuna:"Comuna 1 - Centro",
+      equip:[{t:"MTA",f:"DUAL BAND",s:"F4951B639131"}] },
 
     // ===== Comuna 2 - Sur-Este =====
-    { id:"2468218", acct:"16679481", name:"KENDRIS MI BATISTA RAMOS", nodo:"T3D4F", nombreNodo:"DOCE OCTUBRE 3 4F", jornada:"Tarde", cel:"3206644411", tipo:"Cartera", dirClean:"CR 6A 39-99 PI1-101 - DOCE DE OCTUBRE", wazeAddr:"CR 6A 39-99 Piso 1 Apto 101, Doce de Octubre, Valledupar, Cesar, Colombia", comuna:"Comuna 2 - Sur-Este",
-      equip:[{t:"ITV",f:"CARDLES",s:"254969398093"},{t:"CAR",f:"SMART CARD NGR",s:"25496939809V"},{t:"ITV",f:"CARDLES",s:"254974919205"},{t:"CAR",f:"SMART CARD NGR",s:"25497491920V"},{t:"MTA",f:"DUAL BAND",s:"482952372238"}] },
-    { id:"2468219", acct:"16748229", name:"DANIEL DAV O#ATE GUERRA", nodo:"MYA", nombreNodo:"MAYALES", jornada:"Tarde", cel:"3243769150", tipo:"Cartera", dirClean:"CL 30B 4D-68 PI1-101 - MAYALES", wazeAddr:"CL 30B 4D-68 Piso 1 Apto 101, Mayales, Valledupar, Cesar, Colombia", comuna:"Comuna 2 - Sur-Este",
-      equip:[{t:"ITV",f:"CARDLES",s:"254967210103"},{t:"CAR",f:"SMART CARD NGR",s:"25496721010V"},{t:"MTA",f:"DUAL BAND",s:"FC777B78CC90"}] },
-    { id:"2468222", acct:"17422584", name:"HUGO JOSE CUEVAS DE LA HOZ", nodo:"VLE4F", nombreNodo:"VILLA DEL ROSARIO 2 4", jornada:"Tarde", cel:"3242855086", tipo:"Cartera", dirClean:"CL 35 4B-17 CASA - VILLA DEL ROSARIO", wazeAddr:"CL 35 4B-17 Casa, Villa del Rosario, Valledupar, Cesar, Colombia", comuna:"Comuna 2 - Sur-Este",
-      equip:[{t:"ITV",f:"CARDLES",s:"254988411622"},{t:"CAR",f:"SMART CARD NGR",s:"25498841162V"},{t:"ITV",f:"CARDLES",s:"254990497279"},{t:"CAR",f:"SMART CARD NGR",s:"25499049727V"},{t:"MTA",f:"DUAL BAND",s:"589BF705D71A"}] },
-    { id:"2468230", acct:"17914157", name:"IRMA BEATR OROZCO MEZA", nodo:"MYA4F", nombreNodo:"MAYALES 4F", jornada:"Tarde", cel:"3205513642", tipo:"Cartera", dirClean:"CL 30B 4H-76 PI1-101 - MAYALES", wazeAddr:"CL 30B 4H-76 Piso 1 Apto 101, Mayales, Valledupar, Cesar, Colombia", comuna:"Comuna 2 - Sur-Este",
-      equip:[{t:"CAR",f:"SMART CARD BCTI",s:"09345972"},{t:"ITV",f:"CARDLES",s:"254547714650"},{t:"CAR",f:"SMART CARD NGR",s:"25454771465V"},{t:"MTA",f:"DUAL BAND",s:"589BF70882E5"},{t:"DBV",f:"DVB HD",s:"603162002366289"}] },
-    { id:"2463661", acct:"22415458", name:"KATHERINE DITTA MARTINEZ", nodo:"LLV3F", nombreNodo:"VILLA CLARA 3F", jornada:"Tarde", cel:"3008671026", tipo:"Voluntarios", dirClean:"CL 22 4H-39 PI1-101 - VILLA CLARA", wazeAddr:"CL 22 4H-39 Piso 1 Apto 101, Villa Clara, Valledupar, Cesar, Colombia", comuna:"Comuna 2 - Sur-Este",
-      equip:[{t:"CAR",f:"SMART CARD BCTI",s:"07551229"},{t:"ITV",f:"CARDLES",s:"254848464361"},{t:"CAR",f:"SMART CARD NGR",s:"25484846436V"},{t:"ITV",f:"CARDLES",s:"254852959906"},{t:"CAR",f:"SMART CARD NGR",s:"25485295990V"},{t:"MTA",f:"DOCSIS 3.1",s:"589BF7913978"},{t:"DBV",f:"DVB HD",s:"610119036737"},{t:"CPE",f:"MESH",s:"BFC3C8C5FAD3AA900"}] },
-    { id:"2465231", acct:"29717765", name:"LUIS ALFRE FRAGOZO GUTIERREZ", nodo:"VLE13F", nombreNodo:"VILLA ROSARIO 21 3F", jornada:"Mañana", cel:"3012209087", tipo:"Voluntarios", dirClean:"DOÑA CLARA MZ5-C10A CASA - VILLA ROSARIO 21", wazeAddr:"Doña Clara Manzana 5 Casa C10A, Villa del Rosario, Valledupar, Cesar, Colombia", comuna:"Comuna 2 - Sur-Este",
-      equip:[{t:"ITV",f:"CARDLES",s:"254905535071"},{t:"CAR",f:"SMART CARD NGR",s:"25490553507V"},{t:"ITV",f:"CARDLES",s:"254909261821"},{t:"CAR",f:"SMART CARD NGR",s:"25490926182V"},{t:"ITV",f:"CARDLES",s:"254928235872"},{t:"CAR",f:"SMART CARD NGR",s:"25492823587V"},{t:"ITV",f:"CARDLES",s:"254979613232"},{t:"CAR",f:"SMART CARD NGR",s:"25497961323V"},{t:"CPE",f:"MESH",s:"810024160036509"},{t:"MTA",f:"DUAL BAND",s:"ACD75BD94240"}] },
-    { id:"2463251", acct:"48523178", name:"ANA ROMERO CHURIO", nodo:"VVBF06", nombreNodo:"DIVINO NIÑO BF-06", jornada:"Tarde", cel:"3025280355", tipo:"Voluntarios", dirClean:"CR 4G 21-76 - VILLA CLARA SUR (DIVINO NIÑO)", wazeAddr:"Carrera 4G #21-76, Villa Clara Sur, Divino Niño, Valledupar, Cesar, Colombia", comuna:"Comuna 2 - Sur-Este",
-      equip:[{t:"CPE",f:"ONT RESIDENCIAL",s:"0CF07B690DC8"}] },
+    { id:"2468502", acct:"19939533", name:"ANGEL ANTO ROMERO VENERA", nodo:"LLV3F", nombreNodo:"VILLA CLARA 3F", jornada:"Tarde", cel:"3197250592", tipo:"Cartera", dirClean:"CR 4G 21-73 PI1-101 - VILLA CLARA", wazeAddr:"CR 4G 21-73 Piso 1 Apto 101, Villa Clara, Valledupar, Cesar, Colombia", comuna:"Comuna 2 - Sur-Este",
+      equip:[{t:"ITV",f:"CARDLES",s:"254924957078"},{t:"CAR",f:"SMART CARD NGR",s:"25492495707V"},{t:"ITV",f:"CARDLES",s:"254925218091"},{t:"CAR",f:"SMART CARD NGR",s:"25492521809V"},{t:"MTA",f:"DUAL BAND",s:"C4E5320EF32B"}] },
+    { id:"2468507", acct:"20322109", name:"EDISON GUZMAN TORRES", nodo:"MYA4F", nombreNodo:"MAYALES 4F", jornada:"Tarde", cel:"3003856359", tipo:"Cartera", dirClean:"CL 30B 4H-47 PI2-201 - MAYALES", wazeAddr:"CL 30B 4H-47 Piso 2 Apto 201, Mayales, Valledupar, Cesar, Colombia", comuna:"Comuna 2 - Sur-Este",
+      equip:[{t:"ITV",f:"CARDLES",s:"254542027585"},{t:"CAR",f:"SMART CARD NGR",s:"25454202758V"},{t:"MTA",f:"DUAL BAND",s:"C4E5320EF347"}] },
+    { id:"2468510", acct:"20904792", name:"JUAN JOSE ALVAREZ VILLAMIL", nodo:"VRR3F", nombreNodo:"VILLA ROSARIO 1 3F", jornada:"Tarde", cel:"3044513226", tipo:"Cartera", dirClean:"CR 5 MZC 33-100 CASA11 - VILLA ROSARIO", wazeAddr:"CR 5 Manzana C 33-100 Casa 11, Villa del Rosario, Valledupar, Cesar, Colombia", comuna:"Comuna 2 - Sur-Este",
+      equip:[{t:"ITV",f:"CARDLES",s:"254987639818"},{t:"CAR",f:"SMART CARD NGR",s:"25498763981V"},{t:"ITV",f:"CARDLES",s:"254990533748"},{t:"CAR",f:"SMART CARD NGR",s:"25499053374V"},{t:"MTA",f:"DUAL BAND",s:"606C6365B8D0"}] },
+    { id:"2468518", acct:"21620645", name:"HERMES CUADROS ESTEBAN", nodo:"KS3549", nombreNodo:"SIMON-54-09", jornada:"Tarde", cel:"3153654549", tipo:"Cartera", dirClean:"CL 31 25-38 PI1-LOCAL101 - SIMON BOLIVAR", wazeAddr:"CL 31 25-38 Piso 1 Local 101, Simon Bolivar, Valledupar, Cesar, Colombia", comuna:"Comuna 2 - Sur-Este",
+      equip:[{t:"CAR",f:"SMART CARD BCTI",s:"08981554"},{t:"CAR",f:"SMART CARD BCTI",s:"09364993"},{t:"MTA",f:"DOCSIS 3.1",s:"2CECF70DAB8C"},{t:"DBV",f:"DVB HD",s:"610017910883"},{t:"DBV",f:"DVB HD",s:"610017940015"},{t:"CPE",f:"MESH",s:"SKYW47CCB89C"}] },
+    { id:"2466222", acct:"4676481", name:"YAJAIRA MA LLAMAS TABORDA", nodo:"OSA", nombreNodo:"SANTA ROSA", jornada:"Mañana", cel:"3007556617", tipo:"Voluntarios", dirClean:"CL 34 5C-17 PISO1 - SANTA ROSA", wazeAddr:"CL 34 5C-17 Piso 1, Santa Rosa, Valledupar, Cesar, Colombia", comuna:"Comuna 2 - Sur-Este",
+      equip:[{t:"CAR",f:"SMART CARD BCTI",s:"07302998"},{t:"ITV",f:"CARDLES",s:"254902819799"},{t:"CAR",f:"SMART CARD NGR",s:"25490281979V"},{t:"DBV",f:"DVB HD",s:"603222002634667"},{t:"MTA",f:"DUAL BAND",s:"DC360C5E4A18"}] },
+    { id:"2468515", acct:"21260855", name:"MILENA PAT GARCIA CAHUANA", nodo:"ONO", nombreNodo:"SAN ANTONIO", jornada:"Tarde", cel:"3008921604", tipo:"Cartera", dirClean:"DG 20E 4D-48 PI1-102 - SAN ANTONIO", wazeAddr:"Diagonal 20E 4D-48 Piso 1 Apto 102, San Antonio, Valledupar, Cesar, Colombia", comuna:"Comuna 2 - Sur-Este",
+      equip:[{t:"ITV",f:"CARDLES",s:"254991699709"},{t:"CAR",f:"SMART CARD NGR",s:"25499169970V"},{t:"MTA",f:"DOCSIS 3.1",s:"589BF7907E64"}] },
+    { id:"2466034", acct:"32005802", name:"LILIANA CANTILLO CENTENO", nodo:"HVALLD", nombreNodo:"DTH VALLEDUPAR CESAR", jornada:"Mañana", cel:"3145219114", tipo:"Voluntarios", dirClean:"TV 4E 21A-05 CASA PISO1 - ROSA MERY", wazeAddr:"Transversal 4E #21A-05 Casa Piso 1, Rosa Mery, Valledupar, Cesar, Colombia", comuna:"Comuna 2 - Sur-Este",
+      equip:[{t:"CAR",f:"SMART CARD CNX",s:"01411730376"},{t:"CAR",f:"SMART CARD CNX",s:"02119906966"},{t:"DTH",f:"DTH HD",s:"110424503244"},{t:"DTH",f:"DTH HD",s:"110424503921"}] },
+    { id:"2466558", acct:"46361149", name:"RONAL PACHECO QUINTERO", nodo:"HVALLD", nombreNodo:"DTH VALLEDUPAR CESAR", jornada:"Mañana", cel:"3043961000", tipo:"Voluntarios", dirClean:"MZ C2 CASA - PARQUE LAS AMERICAS (LLAMAR ANTES DE LLEGAR)", wazeAddr:"Manzana C2 Casa, Parque Las Americas, Valledupar, Cesar, Colombia", comuna:"Comuna 2 - Sur-Este",
+      equip:[{t:"CAR",f:"SMART CARD CNX",s:"01397518813"},{t:"DTH",f:"DTH HD",s:"110209514928"}] },
 
     // ===== Comuna 3 - Sur =====
-    { id:"2468208", acct:"11064895", name:"WENDY LORA VELASQUEZ ARIAS", nodo:"VPES57", nombreNodo:"SIMON BOLIVAR 05", jornada:"Tarde", cel:"3226327956", tipo:"Cartera", dirClean:"CR 18D 41-42 CASA - SIMON BOLIVAR", wazeAddr:"CR 18D 41-42 Casa, Simon Bolivar, Valledupar, Cesar, Colombia", comuna:"Comuna 3 - Sur",
-      equip:[{t:"ITV",f:"CARDLES",s:"254973791834"},{t:"CAR",f:"SMART CARD NGR",s:"25497379183V"}] },
-    { id:"2468215", acct:"15581217", name:"MAYRA JOSE DIAZ SANCHEZ", nodo:"TLL", nombreNodo:"LA CASTELLANA", jornada:"Tarde", cel:"3104064779", tipo:"Cartera", dirClean:"CR 37 MZB 2B-00 CASA14 - LA CASTELLANA", wazeAddr:"CR 37 Manzana B 2B-00 Casa 14, La Castellana, Valledupar, Cesar, Colombia", comuna:"Comuna 3 - Sur", verif:true,
-      equip:[{t:"MTA",f:"DOCSIS 3.1",s:"5C7B5CB9E0C8"}] },
-    { id:"2468227", acct:"17664698", name:"JOSE LUIS REALES RODRIGUEZ", nodo:"VTI2D", nombreNodo:"SIETE DE AGOSTO 2 2D", jornada:"Tarde", cel:"3218661597", tipo:"Cartera", dirClean:"CR 25 26-37 PI1-104 - SIETE DE AGOSTO", wazeAddr:"CR 25 26-37 Piso 1 Apto 104, Siete de Agosto, Valledupar, Cesar, Colombia", comuna:"Comuna 3 - Sur",
-      equip:[{t:"ITV",f:"CARDLES",s:"254977911529"},{t:"CAR",f:"SMART CARD NGR",s:"25497791152V"},{t:"MTA",f:"DUAL BAND",s:"589BF7054AC2"}] },
-    { id:"2468226", acct:"17655373", name:"LUIS TIBAQUE LUIS TIBAQUE", nodo:"VPES72", nombreNodo:"LEANDRO DIAS 3-08", jornada:"Tarde", cel:"3013138402", tipo:"Cartera", dirClean:"DG 25 TORRE8 61-41 301 - LEANDRO DIAZ", wazeAddr:"Diagonal 25 Torre 8 61-41 Apto 301, Leandro Diaz, Valledupar, Cesar, Colombia", comuna:"Comuna 3 - Sur",
-      equip:[{t:"ITV",f:"CARDLES",s:"254981454747"},{t:"CAR",f:"SMART CARD NGR",s:"25498145474V"}] },
-    { id:"2468229", acct:"17836486", name:"VICTOR AND PEDROZA VICTOR AND PEDROZA", nodo:"VDSF37", nombreNodo:"LEANDRO DIAZ 2 01", jornada:"Tarde", cel:"3246748511", tipo:"Cartera", dirClean:"CR 30 TORRE2 56-02 403 - LEANDRO DIAZ", wazeAddr:"Carrera 30 Torre 2 56-02 Apto 403, Leandro Diaz, Valledupar, Cesar, Colombia", comuna:"Comuna 3 - Sur",
-      equip:[{t:"ITV",f:"CARDLES",s:"254990826380"},{t:"CAR",f:"SMART CARD NGR",s:"25499082638V"},{t:"CPE",f:"ONT RESIDENCIAL",s:"FC386AEDAE0C"}] },
-    { id:"2468231", acct:"18148287", name:"MIGUEL ANG PEREZ HERRON", nodo:"VPES73", nombreNodo:"LEANDRO DIAS 3-09", jornada:"Tarde", cel:"3246070275", tipo:"Cartera", dirClean:"DG 25 TORRE10 61-41 203 - LEANDRO DIAZ", wazeAddr:"Diagonal 25 Torre 10 61-41 Apto 203, Leandro Diaz, Valledupar, Cesar, Colombia", comuna:"Comuna 3 - Sur",
-      equip:[{t:"ITV",f:"CARDLES",s:"254990811228"},{t:"CAR",f:"SMART CARD NGR",s:"25499081122V"},{t:"CPE",f:"ONT RESIDENCIAL",s:"30F947BF8B72"}] },
+    { id:"2468498", acct:"18626545", name:"ANGELICA M RETAMOZO PATINO", nodo:"VTE", nombreNodo:"SIETE DE AGOSTO 1", jornada:"Tarde", cel:"3506109418", tipo:"Cartera", dirClean:"CR 30A 29-12 CASA - SIETE DE AGOSTO", wazeAddr:"CR 30A 29-12 Casa, Siete de Agosto, Valledupar, Cesar, Colombia", comuna:"Comuna 3 - Sur",
+      equip:[{t:"CAR",f:"SMART CARD BCTI",s:"11083993"},{t:"DBV",f:"DVB HD",s:"603082002187245"}] },
+    { id:"2468508", acct:"20583216", name:"BLANCA PATIÑO RUIZ", nodo:"VTN", nombreNodo:"SAN MARTIN 1", jornada:"Tarde", cel:"3243560327", tipo:"Cartera", dirClean:"CR 19 34-25 PI1-102 - SAN MARTIN", wazeAddr:"CR 19 34-25 Piso 1 Apto 102, San Martin, Valledupar, Cesar, Colombia", comuna:"Comuna 3 - Sur",
+      equip:[{t:"DBV",f:"DVB HD",s:"00926319060808873"},{t:"CAR",f:"SMART CARD BCTI",s:"11980409"},{t:"MTA",f:"DUAL BAND",s:"589BF707DD70"}] },
+    { id:"2466225", acct:"20640903", name:"SANDRA NAY MOLINA DIFILIPO", nodo:"DCR", nombreNodo:"DON CARMELO", jornada:"Mañana", cel:"3176800125", tipo:"Voluntarios", dirClean:"CL 50 32-59 CASA - DON CARMELO", wazeAddr:"CL 50 #32-59 Casa, Don Carmelo, Valledupar, Cesar, Colombia", comuna:"Comuna 3 - Sur",
+      equip:[{t:"DBV",f:"DVB HD",s:"00925419050502995"},{t:"DBV",f:"DVB HD",s:"00925419050544790"},{t:"CAR",f:"SMART CARD BCTI",s:"11790734"},{t:"CAR",f:"SMART CARD BCTI",s:"11790735"},{t:"MTA",f:"DUAL BAND",s:"184859432A5D"},{t:"CPE",f:"MESH",s:"C45C428563AF7B970"},{t:"CPE",f:"MESH",s:"F650928563AF62F30"}] },
+    { id:"2468517", acct:"21518419", name:"FREDIS ENR OSPINO ZABALETA", nodo:"SFBFB5", nombreNodo:"FERNANDO BF-B5", jornada:"Tarde", cel:"3148337467", tipo:"Cartera", dirClean:"CL 33 13-30 PI1-102 - FERNANDO", wazeAddr:"CL 33 13-30 Piso 1 Apto 102, Fernando, Valledupar, Cesar, Colombia", comuna:"Comuna 3 - Sur",
+      equip:[{t:"ITV",f:"CARDLES",s:"254415037683"},{t:"CAR",f:"SMART CARD NGR",s:"25441503768V"},{t:"ITV",f:"CARDLES",s:"254466819707"},{t:"CAR",f:"SMART CARD NGR",s:"25446681970V"},{t:"CPE",f:"ONT RESIDENCIAL",s:"30F947F94262"}] },
+    { id:"2466283", acct:"22934684", name:"YESICA CAR ISEDA MOSCOTE", nodo:"HVALLX", nombreNodo:"DTH VALLEDUPAR CES R", jornada:"Mañana", cel:"3012385759", tipo:"Voluntarios", dirClean:"MZ E CASA19 - URB LA PRIMAVERA 1", wazeAddr:"Manzana E Casa 19, Urbanizacion La Primavera 1, Valledupar, Cesar, Colombia", comuna:"Comuna 3 - Sur",
+      equip:[{t:"CAR",f:"SMART CARD CNX",s:"01703901156"},{t:"CAR",f:"SMART CARD CNX",s:"02129613524"},{t:"CAR",f:"SMART CARD CNX",s:"02129613525"},{t:"DTH",f:"DTH HD",s:"3421117120017253"},{t:"DTH",f:"DTH HD",s:"3421117120017262"},{t:"DTH",f:"DTH HD",s:"3421119031063925"}] },
 
     // ===== Comuna 4 - Oeste =====
-    { id:"2464825", acct:"15017451", name:"SANDRA MIL CASADIEGO CASADIEGOS", nodo:"VIN2F", nombreNodo:"VILLA MIRIAM 2 2F", jornada:"Mañana", cel:"3137415707", tipo:"Voluntarios", dirClean:"CR 31 MZ31-C9 PI2 - VILLA MIRIAM (PARQUE VILLA MIRIAM ANTIGUO)", wazeAddr:"Carrera 31 Manzana 31 Casa 9 Piso 2, Villa Miriam, Valledupar, Cesar, Colombia", comuna:"Comuna 4 - Oeste",
-      equip:[{t:"CAR",f:"SMART CARD BCTI",s:"12299996"},{t:"CAR",f:"SMART CARD BCTI",s:"12529808"},{t:"DBV",f:"DVB HD",s:"603142103328424"},{t:"DBV",f:"DVB HD",s:"603222002685254"},{t:"CPE",f:"MESH",s:"707D0F8E4A45E6460"},{t:"MTA",f:"DUAL BAND",s:"F4951B6AA4AE"}] },
-    { id:"2468234", acct:"18521368", name:"NATALIA VI BELE#O PEREIRA", nodo:"AVD2D", nombreNodo:"ALAMOS 2D", jornada:"Tarde", cel:"3017099353", tipo:"Cartera", dirClean:"BARRIO ALAMOS MZ3-C9 CASA", wazeAddr:"Barrio Alamos Manzana 3 Casa C9, Valledupar, Cesar, Colombia", comuna:"Comuna 4 - Oeste",
-      equip:[{t:"MTA",f:"DUAL BAND",s:"589BF7088535"},{t:"ATV",f:"ANDROID TV",s:"GZ24090414512126"}] },
+    { id:"2466287", acct:"13884099", name:"JIMMY MARC MARTINEZ MOLINA", nodo:"1GO3F", nombreNodo:"DANGOND 1 3F", jornada:"Mañana", cel:"3017348446", tipo:"Voluntarios", dirClean:"TV 21 18A-31 PI1-APTO101 - CACIQUE (DANGOND)", wazeAddr:"Transversal 21 #18A-31 Piso 1 Apto 101, sector Cacique, Dangond, Valledupar, Cesar, Colombia", comuna:"Comuna 4 - Oeste",
+      equip:[{t:"CAR",f:"SMART CARD BCTI",s:"11308295"},{t:"ITV",f:"CARDLES",s:"254867583455"},{t:"CAR",f:"SMART CARD NGR",s:"25486758345V"},{t:"MTA",f:"DUAL BAND",s:"589BF70A4F5C"},{t:"DBV",f:"DVB HD",s:"603142103374143"}] },
+    { id:"2466554", acct:"15642955", name:"IVAN CAMIL APONZA CANTONI", nodo:"AVD3D", nombreNodo:"ALAMOS 3D", jornada:"Tarde", cel:"3228844597", tipo:"Voluntarios", dirClean:"MZ I CASA C19 - BARRIO MARIA CAMILA SUR (ALAMOS)", wazeAddr:"Manzana I Casa C19, Barrio Maria Camila Sur, Alamos, Valledupar, Cesar, Colombia", comuna:"Comuna 4 - Oeste",
+      equip:[{t:"CAR",f:"SMART CARD BCTI",s:"05077654"},{t:"CAR",f:"SMART CARD BCTI",s:"08234278"},{t:"MTA",f:"DOCSIS 3.1",s:"2CECF70DB864"},{t:"DBV",f:"DVB HD",s:"603162002362111"},{t:"DBV",f:"DVB HD",s:"603202103426010"},{t:"CPE",f:"MESH",s:"SKYW47CA560C"}] },
+    { id:"2466541", acct:"27971828", name:"LINA VANES MOLINA GARCIA", nodo:"VIN2F", nombreNodo:"VILLA MIRIAM 2 2F", jornada:"Mañana", cel:"3206058712", tipo:"Voluntarios", dirClean:"CR 34 18B-28 CASA - VILLA CADIA (VILLA MIRIAM)", wazeAddr:"Carrera 34 #18B-28 Casa, Villa Cadia, Villa Miriam, Valledupar, Cesar, Colombia", comuna:"Comuna 4 - Oeste",
+      equip:[{t:"MTA",f:"DUAL BAND",s:"5447CCC794D8"}] },
+    { id:"2466871", acct:"26477675", name:"BREYNER RA GUERRA QUIROZ", nodo:"IMI3F", nombreNodo:"CASIMIRO SABANA 3F", jornada:"Mañana", cel:"3013130991", tipo:"Voluntarios", dirClean:"MZ1 CASA5 - VILLA MAGDALA", wazeAddr:"Manzana 1 Casa 5, Villa Magdala, Valledupar, Cesar, Colombia", comuna:"Comuna 4 - Oeste", verif:true,
+      equip:[{t:"ITV",f:"CARDLES",s:"230680681425"},{t:"CAR",f:"SMART CARD NGR",s:"23068068142V"},{t:"MTA",f:"DOCSIS 3.1",s:"2CECF70CC204"}] },
+    { id:"2466053", acct:"45876535", name:"ROBERTO CA CASTAÑEZ CADENA", nodo:"DLC2F", nombreNodo:"LAS DELICIAS 2F", jornada:"Mañana", cel:"3175007212", tipo:"Voluntarios", dirClean:"DG 20 19D-29 CASA PISO1 - LOS CACIQUES (LAS DELICIAS)", wazeAddr:"Diagonal 20 #19D-29 Casa Piso 1, Los Caciques, Valledupar, Cesar, Colombia", comuna:"Comuna 4 - Oeste", verif:true,
+      equip:[{t:"CAR",f:"SMART CARD BCTI",s:"04700720"},{t:"DBV",f:"DVB HD",s:"21530119058W49008040"},{t:"MTA",f:"DOCSIS 3.1",s:"F8790A9B8D89"},{t:"CPE",f:"MESH",s:"SKYW47CD5B5C"},{t:"CPE",f:"MESH",s:"SKYW47EFAC76"}] },
+    { id:"2468506", acct:"20189774", name:"EDIEL MOJICA MOSQUERA", nodo:"VPVL22", nombreNodo:"FLORES MARIA 1", jornada:"Tarde", cel:"3128477924", tipo:"Cartera", dirClean:"CL 16 MZ1 45BIS-95 APTO4B - FLORES DE MARIA", wazeAddr:"CL 16 Manzana 1 45Bis-95 Apto 4B, Flores de Maria, Valledupar, Cesar, Colombia", comuna:"Comuna 4 - Oeste",
+      equip:[{t:"ITV",f:"CARDLES",s:"254980836370"},{t:"CAR",f:"SMART CARD NGR",s:"25498083637V"},{t:"CPE",f:"ONT RESIDENCIAL",s:"4485DA0A290E"}] },
+    { id:"2466255", acct:"11892105", name:"NELLYT DE MEJIA MURGAS", nodo:"VPES33", nombreNodo:"FLORES DE MARIA 2", jornada:"Tarde", cel:"3167864226", tipo:"Voluntarios", dirClean:"CR 143 16B-146 APTO - FLORES DE MARIA 2", wazeAddr:"Carrera 143 #16B-146 Apartamento, Flores de Maria 2, Valledupar, Cesar, Colombia", comuna:"Comuna 4 - Oeste",
+      equip:[{t:"ITV",f:"CARDLES",s:"254586682135"},{t:"CAR",f:"SMART CARD NGR",s:"25458668213V"},{t:"ITV",f:"CARDLES",s:"254994994767"},{t:"CAR",f:"SMART CARD NGR",s:"25499499476V"},{t:"ITV",f:"CARDLES",s:"254996591534"},{t:"CAR",f:"SMART CARD NGR",s:"25499659153V"},{t:"ITV",f:"CARDLES",s:"254996592342"},{t:"CAR",f:"SMART CARD NGR",s:"25499659234V"}] },
 
     // ===== Comuna 5 - Noroeste =====
-    { id:"2464482", acct:"12900824", name:"LIZ CAROLI ROMERO AVILA", nodo:"GRP1", nombreNodo:"GARUPAL 1", jornada:"Mañana", cel:"3226617223", tipo:"Voluntarios", dirClean:"CR 30A SUR 11A SUR-53 SUR CASA - GARUPAL ETAPA 3 - 20 DE JULIO", wazeAddr:"Carrera 30A Sur #11A Sur-53 Sur Casa, Garupal Etapa 3, Valledupar, Cesar, Colombia", comuna:"Comuna 5 - Noroeste",
-      equip:[{t:"CAR",f:"SMART CARD BCTI",s:"10060916"},{t:"ITV",f:"CARDLES",s:"254964167695"},{t:"CAR",f:"SMART CARD NGR",s:"25496416769V"},{t:"MTA",f:"DUAL BAND",s:"589BF7059A54"},{t:"DBV",f:"DVB HD",s:"603252002867151"}] },
-    { id:"2468216", acct:"16486606", name:"ALVARO OSPINO ALVARO OSPINO", nodo:"4ZP4F", nombreNodo:"NUEVA ESPERANZA 4 4F", jornada:"Tarde", cel:"3009744717", tipo:"Cartera", dirClean:"CL 9 30-18 PI2-IN201 - NUEVA ESPERANZA", wazeAddr:"CL 9 30-18 Piso 2 Interior 201, Nueva Esperanza, Valledupar, Cesar, Colombia", comuna:"Comuna 5 - Noroeste",
-      equip:[{t:"MTA",f:"DUAL BAND",s:"206A94808D80"},{t:"ITV",f:"CARDLES",s:"254969540914"},{t:"CAR",f:"SMART CARD NGR",s:"25496954091V"}] },
-    { id:"2468217", acct:"16522988", name:"SHIRLEY YA URIBE JASSIR", nodo:"VNT3D1", nombreNodo:"CANDELARIA NORTE 3D 1", jornada:"Tarde", cel:"3015551725", tipo:"Cartera", dirClean:"CR 20 5C-02 103 - CANDELARIA NORTE", wazeAddr:"CR 20 5C-02 Apto 103, Candelaria Norte, Valledupar, Cesar, Colombia", comuna:"Comuna 5 - Noroeste",
-      equip:[{t:"ITV",f:"CARDLES",s:"254959346484"},{t:"CAR",f:"SMART CARD NGR",s:"25495934648V"},{t:"MTA",f:"DUAL BAND",s:"B0FC88FA8CB8"}] },
-    { id:"2468221", acct:"17140756", name:"JUAN FELIP CALDERON ESCOBAR", nodo:"AZU", nombreNodo:"AZUCAR BUENA", jornada:"Tarde", cel:"3144308627", tipo:"Cartera", dirClean:"CL 13BBIS 20-35 CASA - AZUCAR BUENA", wazeAddr:"CL 13B Bis 20-35 Casa, Azucar Buena, Valledupar, Cesar, Colombia", comuna:"Comuna 5 - Noroeste",
-      equip:[{t:"CAR",f:"SMART CARD BCTI",s:"11583042"},{t:"MTA",f:"DUAL BAND",s:"589BF7080B26"},{t:"DBV",f:"DVB HD",s:"603512003042950"}] },
-    { id:"2468224", acct:"17541745", name:"SARA MERCE MIERDA DE OSPINO", nodo:"3ZP3F", nombreNodo:"NUEVA ESPERANZA 3 3F", jornada:"Tarde", cel:"3016663968", tipo:"Cartera", dirClean:"CR 33 9-33 CASA - NUEVA ESPERANZA", wazeAddr:"CR 33 9-33 Casa, Nueva Esperanza, Valledupar, Cesar, Colombia", comuna:"Comuna 5 - Noroeste",
-      equip:[{t:"CAR",f:"SMART CARD BCTI",s:"11202544"},{t:"CAR",f:"SMART CARD BCTI",s:"11823965"},{t:"DBV",f:"DVB HD",s:"603082002165466"},{t:"DBV",f:"DVB HD",s:"603222002578358"},{t:"MTA",f:"DOCSIS 3",s:"94BF9569E979"}] },
-    { id:"2468225", acct:"17628339", name:"LAURA VANE RODRIGUEZ CHAVES", nodo:"AZU1", nombreNodo:"AZUCAR BUENA 1", jornada:"Tarde", cel:"3045502835", tipo:"Cartera", dirClean:"CL 14 19E-66 CASA - AZUCAR BUENA", wazeAddr:"CL 14 19E-66 Casa, Azucar Buena, Valledupar, Cesar, Colombia", comuna:"Comuna 5 - Noroeste",
-      equip:[{t:"MTA",f:"DUAL BAND",s:"F4951B6F1947"}] },
-    { id:"2468228", acct:"17784983", name:"EDWIN ANTO DELGADO HERRERA", nodo:"VMS", nombreNodo:"LOS MUSICOS", jornada:"Tarde", cel:"3004216495", tipo:"Cartera", dirClean:"CL 7 19D-31 CASA - LOS MUSICOS", wazeAddr:"CL 7 19D-31 Casa, Los Musicos, Valledupar, Cesar, Colombia", comuna:"Comuna 5 - Noroeste",
-      equip:[{t:"MTA",f:"DOCSIS 3.1",s:"5C7B5CB9EFFC"}] },
-    { id:"2384156", acct:"28244768", name:"JENNIFER LIZARAZO", nodo:"TLL1", nombreNodo:"LA CASTELLANA 1", jornada:"Mañana", cel:"3156963299", tipo:"Voluntarios", dirClean:"CR 41 6-70 TO2-205 - CONJ PUERTO VELO - LA CASTELLANA", wazeAddr:"Carrera 41 #6-70 Conjunto Cerrado Puerto Velo Torre 2 Apto 205, La Castellana, Valledupar, Cesar, Colombia", comuna:"Comuna 5 - Noroeste",
-      equip:[{t:"ITV",f:"CARDLES",s:"254459479608"},{t:"CAR",f:"SMART CARD NGR",s:"25445947960V"},{t:"ITV",f:"CARDLES",s:"254925100909"},{t:"CAR",f:"SMART CARD NGR",s:"25492510090V"},{t:"MTA",f:"DUAL BAND",s:"A4438CB31D1B"}] },
-    { id:"2468233", acct:"18272657", name:"CARLOS ENR GAMEZ CALDERON", nodo:"4ZP2F", nombreNodo:"NUEVA ESPERANZA 4 2F", jornada:"Tarde", cel:"3052793618", tipo:"Cartera", dirClean:"CR 30 7C-37 PI1-103 - NUEVA ESPERANZA", wazeAddr:"CR 30 7C-37 Piso 1 Apto 103, Nueva Esperanza, Valledupar, Cesar, Colombia", comuna:"Comuna 5 - Noroeste",
-      equip:[{t:"ITV",f:"CARDLES",s:"254988411925"},{t:"CAR",f:"SMART CARD NGR",s:"25498841192V"},{t:"ITV",f:"CARDLES",s:"254989017696"},{t:"CAR",f:"SMART CARD NGR",s:"25498901769V"},{t:"MTA",f:"DUAL BAND",s:"589BF705AC3E"}] },
-    { id:"2465166", acct:"20131773", name:"NORELLA EL MANJARREZ OSPINO", nodo:"VVBF90", nombreNodo:"DIVINO NIÑO BF-90", jornada:"Mañana", cel:"3028464088", tipo:"Voluntarios", dirClean:"CL 7 19B-76 CASA - DIVINO NIÑO (LOS MUSICOS)", wazeAddr:"CL 7 19B-76 Casa, Divino Niño, cerca a Los Musicos, Valledupar, Cesar, Colombia", comuna:"Comuna 5 - Noroeste",
-      equip:[{t:"ITV",f:"CARDLES",s:"230627763544"},{t:"CAR",f:"SMART CARD NGR",s:"23062776354V"},{t:"ITV",f:"CARDLES",s:"255004113143"},{t:"CAR",f:"SMART CARD NGR",s:"25500411314V"},{t:"CPE",f:"ONT RESIDENCIAL",s:"4485DAD727FD"}] },
-    { id:"2463595", acct:"30427697", name:"JUAN CALEB HERNANDEZ DAZA", nodo:"GRP1", nombreNodo:"GARUPAL 1", jornada:"Mañana", cel:"3054049027", tipo:"Voluntarios", dirClean:"CL 11C 27-12 - GARUPAL ETAPA 3", wazeAddr:"Calle 11C #27-12, Garupal Etapa 3, Valledupar, Cesar, Colombia", comuna:"Comuna 5 - Noroeste",
-      equip:[{t:"MTA",f:"DUAL BAND",s:"3C585D3CA3F8"},{t:"CPE",f:"MESH",s:"B201528563AF7A2E0"},{t:"CPE",f:"MESH",s:"B5EBF28563AF5CFD0"}] },
-    { id:"2464388", acct:"32167302", name:"ANGELA ROS MAESTRE GONZALEZ", nodo:"PPA2D", nombreNodo:"LA POPA 2D", jornada:"Mañana", cel:"3167054051", tipo:"Voluntarios", dirClean:"MZ34 CASA5 ESTE - GARUPAL SEGUNDA ETAPA (LA POPA)", wazeAddr:"Manzana 34 Casa 5 Este, Garupal Segunda Etapa, La Popa, Valledupar, Cesar, Colombia", comuna:"Comuna 5 - Noroeste",
-      equip:[{t:"ITV",f:"CARDLES",s:"254921059099"},{t:"CAR",f:"SMART CARD NGR",s:"25492105909V"},{t:"MTA",f:"DUAL BAND",s:"A4438CB3B555"}] },
-    { id:"2465394", acct:"44011302", name:"ELVIA ESCALLO", nodo:"VRE1", nombreNodo:"VILLA CAREL 1", jornada:"Tarde", cel:"3206437824", tipo:"Voluntarios", dirClean:"CR 19A 6D-50 CASA - LOS MUSICOS (VILLA CAREL)", wazeAddr:"Carrera 19A #6D-50 Casa, dos pisos, Los Musicos, Valledupar, Cesar, Colombia", comuna:"Comuna 5 - Noroeste",
-      equip:[{t:"CAR",f:"SMART CARD BCTI",s:"12653234"},{t:"ITV",f:"CARDLES",s:"254867444148"},{t:"CAR",f:"SMART CARD NGR",s:"25486744414V"},{t:"DBV",f:"DVB HD",s:"610119017032"}] },
-    { id:"2463549", acct:"65741027", name:"LUIS ARTUR RIVEIRA DAZA", nodo:"DON4D", nombreNodo:"MONUMENTO ACORDEON 4", jornada:"Mañana", cel:"3157272764", tipo:"Voluntarios", dirClean:"CR 19BIS 4C-33 CASA - MONUMENTO ACORDEON", wazeAddr:"CR 19Bis 4C-33 Casa, Monumento Acordeon, Valledupar, Cesar, Colombia", comuna:"Comuna 5 - Noroeste",
-      equip:[{t:"ITV",f:"NAGRA",s:"205932029242800456"},{t:"CAR",f:"SMART CARD NGR",s:"245713047083"},{t:"ITV",f:"CARDLES",s:"254976176162"},{t:"CAR",f:"SMART CARD NGR",s:"25497617616V"},{t:"ITV",f:"CARDLES",s:"254978262629"},{t:"CAR",f:"SMART CARD NGR",s:"25497826262V"},{t:"ITV",f:"CARDLES",s:"254978374559"},{t:"CAR",f:"SMART CARD NGR",s:"25497837455V"},{t:"ITV",f:"CARDLES",s:"254978384661"},{t:"CAR",f:"SMART CARD NGR",s:"25497838466V"},{t:"CPE",f:"MESH",s:"52220F8E4A44BD6A0"},{t:"MTA",f:"DUAL BAND",s:"606C63235D10"},{t:"CPE",f:"MESH",s:"616ACF8E4A44BD390"}] }
+    { id:"2465975", acct:"15762574", name:"OLGA LUCIA MOLINA ARAUJO", nodo:"AZU1", nombreNodo:"AZUCAR BUENA 1", jornada:"Mañana", cel:"3007174093", tipo:"Voluntarios", dirClean:"CL 14B 19C-03 CASA - LAS FLORES (AZUCAR BUENA)", wazeAddr:"CL 14B #19C-03 Casa, Las Flores, Azucar Buena, Valledupar, Cesar, Colombia", comuna:"Comuna 5 - Noroeste",
+      equip:[{t:"CAR",f:"SMART CARD BCTI",s:"10271242"},{t:"CAR",f:"SMART CARD BCTI",s:"10573716"},{t:"ITV",f:"CARDLES",s:"254542817898"},{t:"CAR",f:"SMART CARD NGR",s:"25454281789V"},{t:"ITV",f:"CARDLES",s:"254542822950"},{t:"CAR",f:"SMART CARD NGR",s:"25454282295V"},{t:"DBV",f:"DVB HD",s:"603192002399682"},{t:"DBV",f:"DVB HD",s:"9638118050056687"},{t:"MTA",f:"DUAL BAND",s:"B0FC88F8A2F0"}] },
+    { id:"2468509", acct:"20598255", name:"LEONARDO F ACOSTA DIAZ", nodo:"DON", nombreNodo:"MONUMENTO ACORDEON", jornada:"Tarde", cel:"3022814251", tipo:"Cartera", dirClean:"CL 1 19B-38 CASA - MONUMENTO ACORDEON", wazeAddr:"CL 1 19B-38 Casa, Monumento Acordeon, Valledupar, Cesar, Colombia", comuna:"Comuna 5 - Noroeste",
+      equip:[{t:"MTA",f:"DOCSIS 3.1",s:"589BF79137F0"},{t:"ATV",f:"ANDROID TV",s:"GZ24080514102915"},{t:"ATV",f:"ANDROID TV",s:"GZ24080514103107"},{t:"CPE",f:"MESH",s:"SKYW47EFF126"}] },
+    { id:"2466096", acct:"21396345", name:"LIZETH PAO VISCAINO DE LA CRUZ", nodo:"VAD", nombreNodo:"LA NEVADA 2", jornada:"Mañana", cel:"3046113718", tipo:"Voluntarios", dirClean:"CL 7B 38-86 CASA PISO2 - DIVINO NIÑO (LA NEVADA)", wazeAddr:"CL 7B #38-86 Casa Piso 2, Divino Niño, Valledupar, Cesar, Colombia", comuna:"Comuna 5 - Noroeste",
+      equip:[{t:"CAR",f:"SMART CARD BCTI",s:"07760797"},{t:"MTA",f:"DUAL BAND",s:"589BF707FAD4"},{t:"DBV",f:"DVB HD",s:"610017947377"}] },
+    { id:"2466319", acct:"45982428", name:"JOSEFA MEJIA FLORES", nodo:"VNT4D", nombreNodo:"CANDELARIA NORTE 4D", jornada:"Mañana", cel:"3107041904", tipo:"Voluntarios", dirClean:"CR 19C 6A-67 - CANDELARIA NORTE", wazeAddr:"Carrera 19C #6A-67, Candelaria Norte, Valledupar, Cesar, Colombia", comuna:"Comuna 5 - Noroeste",
+      equip:[{t:"DBV",f:"DVB HD",s:"00847317010080522"},{t:"CAR",f:"SMART CARD BCTI",s:"04780150"},{t:"CAR",f:"SMART CARD BCTI",s:"07030231"},{t:"MTA",f:"DUAL BAND",s:"08A7C0BCBD6B"},{t:"DBV",f:"DVB HD",s:"21530119058W49005822"},{t:"ITV",f:"CARDLES",s:"254838159012"},{t:"CAR",f:"SMART CARD NGR",s:"25483815901V"},{t:"CPE",f:"MESH",s:"ZTEEH7VQ1H15448"},{t:"CPE",f:"MESH",s:"ZTEEH7VQ1H15483"}] },
+    { id:"2466074", acct:"68609722", name:"JORGE FRAN MACHADO PATIÑO", nodo:"VGJ", nombreNodo:"LA GRANJA", jornada:"Mañana", cel:"3235827697", tipo:"Voluntarios", dirClean:"CL 19B 14-83 CASA - COLINAS DEL GAITAN (1 MODEM 2 DECOS)", wazeAddr:"CL 19B #14-83 Casa, Colinas del Gaitan, Valledupar, Cesar, Colombia", comuna:"Comuna 5 - Noroeste", verif:true,
+      equip:[{t:"ITV",f:"CARDLES",s:"254996766477"},{t:"CAR",f:"SMART CARD NGR",s:"25499676647V"},{t:"ITV",f:"CARDLES",s:"254997005670"},{t:"CAR",f:"SMART CARD NGR",s:"25499700567V"},{t:"ITV",f:"CARDLES",s:"254997244459"},{t:"CAR",f:"SMART CARD NGR",s:"25499724445V"},{t:"MTA",f:"DOCSIS 3.1",s:"5C7B5CAF7874"}] },
+
+    // ===== Comuna 6 - Norte =====
+    { id:"2468500", acct:"18954304", name:"ENIDIRA ES FRAGOZO RODRIGUEZ", nodo:"GEL", nombreNodo:"ANGELES PONTEVEDRA 1", jornada:"Tarde", cel:"3214359988", tipo:"Cartera", dirClean:"CL 6ABIS 13B-46 PI3-301 - LOS ANGELES (PONTEVEDRA)", wazeAddr:"CL 6A Bis 13B-46 Piso 3 Apto 301, Los Angeles, Valledupar, Cesar, Colombia", comuna:"Comuna 6 - Norte",
+      equip:[{t:"MTA",f:"DUAL BAND",s:"98F781F5249C"}] },
+    { id:"2466639", acct:"79121089", name:"ALBERTO FR GONZALEZ ZULETA", nodo:"GEL", nombreNodo:"ANGELES PONTEVEDRA 1", jornada:"Mañana", cel:"3157412685", tipo:"Voluntarios", dirClean:"CR 12 6-2C-52 APTO504 ED PIAMONTE - LOS ANGELES", wazeAddr:"Carrera 12 #6-2C-52 Apto 504, Edificio Piamonte, Los Angeles, Valledupar, Cesar, Colombia", comuna:"Comuna 6 - Norte",
+      equip:[{t:"ITV",f:"CARDLES",s:"254432501420"},{t:"CAR",f:"SMART CARD NGR",s:"25443250162V"},{t:"ITV",f:"CARDLES",s:"254435548192"},{t:"CAR",f:"SMART CARD NGR",s:"25443554819V"},{t:"ITV",f:"CARDLES",s:"254436253346"},{t:"CAR",f:"SMART CARD NGR",s:"25443625334V"},{t:"ITV",f:"CARDLES",s:"255054312745"},{t:"CAR",f:"SMART CARD NGR",s:"25505431274V"},{t:"MTA",f:"DOCSIS 3.1",s:"589BF79226FC"}] }
 ];
 
 // ===== LISTA DE COMUNAS =====
@@ -304,7 +314,7 @@ function actualizarContadores(dk) {
 }
 
 const ROUTE_DB = {
-    "2026-08-26":{title:"Ruta 26 Agosto 2026 · Valledupar · Comuna 1 → 6",tecnico:"Martín Robles",orders:ORDENES_26}
+    "2026-08-27":{title:"Ruta 27 Agosto 2026 · Valledupar · Comuna 1 → 6",tecnico:"Martín Robles",orders:ORDENES_27}
 };
 let currentMonth=8,currentYear=2026,currentDateKey=null,currentOrders=[],statusMaps={};
 const MONTHS_ES=["","Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
@@ -314,9 +324,9 @@ function selectMonth(m){currentMonth=m;currentDateKey=null;renderMonthNav();rend
 function renderMonthNav(){let html='<span style="font-size:.75rem;font-weight:700;color:#555">📆 Mes:</span>';for(let i=8;i<=8;i++){let active=i===currentMonth?'active':'';html+=`<button class="month-btn has-data ${active}" onclick="selectMonth(${i})">${MONTHS_ES[i]}</button>`;}document.getElementById('monthNav').innerHTML=html;}
 function renderDayGrid(){let days=getDaysInMonth(currentMonth,currentYear),firstDay=getFirstDayOfMonth(currentMonth,currentYear);document.getElementById('dayNavTitle').innerHTML=`📅 ${MONTHS_ES[currentMonth]} ${currentYear} · Seleccione día`;let html='<div class="dow-header">Dom</div><div class="dow-header">Lun</div><div class="dow-header">Mar</div><div class="dow-header">Mié</div><div class="dow-header">Jue</div><div class="dow-header">Vie</div><div class="dow-header">Sáb</div>';for(let i=0;i<firstDay;i++)html+=`<div class="day-cell empty"></div>`;for(let d=1;d<=days;d++){let key=`${currentYear}-${String(currentMonth).padStart(2,'0')}-${String(d).padStart(2,'0')}`;let has=!!ROUTE_DB[key],active=(key===currentDateKey);html+=`<div class="day-cell ${has?'has-route':''} ${active?'active':''}" onclick="selectDay('${key}')"><span class="day-n">${d}</span>${has?'<div class="day-dot"></div>':''}</div>`;}document.getElementById('dayGrid').innerHTML=html;}
 function selectDay(key){currentDateKey=key;renderDayGrid();if(ROUTE_DB[key])loadRoute(key);else document.getElementById('routeContent').innerHTML=`<div style="padding:2rem;text-align:center;background:#fff;border-radius:18px"><h3>📋 Sin ruta para ${key}</h3></div>`;}
-function getStatusKey(dk){return'status26_'+dk;}
-function getAgendaKey(dk){return'agenda26_'+dk;}
-function getNotaKey(dk){return'nota26_'+dk;}
+function getStatusKey(dk){return'status27_'+dk;}
+function getAgendaKey(dk){return'agenda27_'+dk;}
+function getNotaKey(dk){return'nota27_'+dk;}
 let statusMaps2={};
 let agendaMaps={};
 let notaMaps={};
@@ -338,7 +348,7 @@ function scheduleOrder(id,dk){
     let input=prompt('📅 ¿Para qué día se agenda esta visita? (formato AAAA-MM-DD)', actual||new Date().toISOString().slice(0,10));
     if(input===null) return; // cancelado
     input=input.trim();
-    if(!/^\d{4}-\d{2}-\d{2}$/.test(input)){ alert('Fecha inválida. Usa el formato AAAA-MM-DD, por ejemplo 2026-08-27.'); return; }
+    if(!/^\d{4}-\d{2}-\d{2}$/.test(input)){ alert('Fecha inválida. Usa el formato AAAA-MM-DD, por ejemplo 2026-08-28.'); return; }
     setAgendaDate(id,input,dk);
     let notaActual=getNota(id,dk);
     let nota=prompt('📝 Nota u observación para esta visita agendada (opcional):', notaActual||'');
@@ -395,7 +405,7 @@ function renderFilteredList(dk){
             let gmapsUrl=`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(o.wazeAddr)}`;
             let phoneLink=o.cel&&o.cel!=='0'?`tel:+57${o.cel.replace(/\D/g,'')}`:'#';
             let cardStyle=st==="realizado"?"opacity:.45;":"";
-            let tipoClass=o.tipo==="Cartera"?"tag-cart":"tag-vol";
+            let tipoClass=o.tipo==="Cartera"?"tag-cart":(o.tipo==="Corporativo"?"tag-corp":"tag-vol");
             const ordenSugerido = o.orden || (idx+1);
             listHtml+=`<div class="card ${o.jornada==='Mañana'?'manana-card':'tarde-card'}" style="${cardStyle}">
                 <div class="num"><span class="route-num">${idx+1}</span><span style="font-size:.6rem">${o.id}</span></div>
@@ -403,6 +413,7 @@ function renderFilteredList(dk){
                     <div class="name-row">
                         <span class="name">${o.name}</span>
                         <span class="jornada-badge ${o.jornada==='Mañana'?'jornada-manana':'jornada-tarde'}">${o.jornada}</span>
+                        ${o.tipo==='Corporativo'?'<span class="jornada-badge corp-badge">🏢 Corporativo</span>':''}
                         ${o.alert?'<span class="jornada-badge alert-badge">🚩 Verificar ciudad/dirección</span>':(o.verif?'<span class="jornada-badge verif-badge">🔎 Verificar comuna</span>':'')}
                         ${st==='agendado'&&getAgendaDate(o.id,dk)?`<span class="jornada-badge verif-badge">📅 Agendado para el ${formatFechaAgenda(getAgendaDate(o.id,dk))}</span>`:''}
                         <span class="orden-badge">🔢 Orden sugerido: ${ordenSugerido}</span>
@@ -450,12 +461,12 @@ function sendWhatsApp(order){
 }
 function exportExcel(dk){
     let wb=XLSX.utils.book_new();
-    let sheet=[["#","ID Servicio","Cuenta","Nombre","Nodo","Nombre Nodo","Dirección","Zona/Comuna","Jornada","Tipo","Estado","Fecha Agendada","Nota","Celular","Equipos (sin BCTI/CNX/NGR)","Dirección Waze"]];
+    let sheet=[["#","ID Servicio","Cuenta/OT","Nombre","Nodo","Nombre Nodo","Dirección","Zona/Comuna","Jornada","Tipo","Estado","Fecha Agendada","Nota","Celular","Equipos (sin BCTI/CNX/NGR)","Dirección Waze"]];
     currentOrders.forEach((o,i)=>{let st=getStatus(o.id,dk);let fechaAg=st==='agendado'?formatFechaAgenda(getAgendaDate(o.id,dk)):'';let nota=st==='agendado'?getNota(o.id,dk):'';sheet.push([i+1,o.id,o.acct,o.name,o.nodo,o.nombreNodo,o.dirClean,o.comuna,o.jornada,o.tipo,st,fechaAg,nota,o.cel,getEquiposNoBCTI(o.equip).length,o.wazeAddr]);});
     XLSX.utils.book_append_sheet(wb,XLSX.utils.aoa_to_sheet(sheet),"RUTA_"+dk.replace(/-/g,"_"));
     XLSX.writeFile(wb,"VALLEDUPAR_RUTA_"+dk+".xlsx");
 }
-window.addEventListener('DOMContentLoaded',()=>{renderMonthNav();selectMonth(8);selectDay('2026-08-26');});
+window.addEventListener('DOMContentLoaded',()=>{renderMonthNav();selectMonth(8);selectDay('2026-08-27');});
 window.selectMonth=selectMonth;window.selectDay=selectDay;window.setStatus=setStatus;window.resetAllStatus=resetAllStatus;
 window.renderFilteredList=renderFilteredList;window.toggleInv=toggleInv;window.sendWhatsApp=sendWhatsApp;
 window.exportExcel=exportExcel;window.copyToClipboard=copyToClipboard;window.scheduleOrder=scheduleOrder;window.editNota=editNota;
